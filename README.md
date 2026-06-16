@@ -17,7 +17,8 @@
 
 ## 🖥️ 截图
 
-![screenshot](screenshot.png)
+![screenshot](README\js1.png)
+![screenshot](README\js2.png)
 
 ## 🏗️ 技术栈
 
