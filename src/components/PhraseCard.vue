@@ -14,7 +14,7 @@ const props = defineProps<{ phrase: Phrase }>()
 const emit = defineEmits<{ edit: [phrase: Phrase] }>()
 
 const phraseStore = usePhraseStore()
-const { copyText } = useClipboard()
+const { copyText, copyRich } = useClipboard()
 const message = useMessage()
 
 const copying = ref(false)
@@ -29,7 +29,11 @@ async function handleCopy() {
   if (copying.value) return
   copying.value = true
   try {
-    await copyText(props.phrase.text_content)
+    if (props.phrase.image_paths.length > 0) {
+      await copyRich(props.phrase.text_content, props.phrase.image_paths)
+    } else {
+      await copyText(props.phrase.text_content)
+    }
     await phraseStore.incrementUsage(props.phrase.id)
     copied.value = true
     message.success(t('phrase.copySuccess'))
