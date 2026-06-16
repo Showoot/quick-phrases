@@ -45,7 +45,7 @@
 
 ```bash
 # 克隆项目
-git clone https://github.com/yourname/quick-phrases.git
+git clone https://github.com/Showoot/quick-phrases.git
 cd quick-phrases
 
 # 安装依赖
