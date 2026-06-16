@@ -17,8 +17,8 @@
 
 ## 🖥️ 截图
 
-![screenshot](README\js1.png)
-![screenshot](README\js2.png)
+![screenshot](https://github.com/Showoot/quick-phrases/blob/main/README/js1.png)
+![screenshot](https://github.com/Showoot/quick-phrases/blob/main/README/js2.png)
 
 ## 🏗️ 技术栈
 
